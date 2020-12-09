@@ -218,7 +218,15 @@ namespace EtherscanApi
 					throw new InvalidKeyException(resultText);
 				}
 				
-				throw new EtherscanApiException(resultText);
+				try
+				{
+					// Try to return empty result
+					return responseBody.Result.ToObject<T>();
+				}
+				catch
+				{
+					throw new EtherscanApiException(responseBody.Message);
+				}
 			}
 
 			try

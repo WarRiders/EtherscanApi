@@ -9,6 +9,9 @@ namespace EtherscanApi
 		[JsonProperty("status")]
 		private string StatusText { get; set; }
 
+		[JsonProperty("message")]
+		public string Message { get; private set; }
+		
 		[JsonProperty("result")]
 		public JToken Result { get; private set; }
 		
