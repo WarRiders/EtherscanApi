@@ -5,6 +5,7 @@
 		<Title>Etherscan API wrapper for C#</Title>
 		<Authors>War Riders team</Authors>
 		<Copyright>War Riders team, Vladislav Pashaiev</Copyright>
+		<PackageVersion>1.0.1</PackageVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
