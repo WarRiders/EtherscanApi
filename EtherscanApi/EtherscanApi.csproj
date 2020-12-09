@@ -2,6 +2,9 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
+		<Title>Etherscan API wrapper for C#</Title>
+		<Authors>War Riders team</Authors>
+		<Copyright>War Riders team, Vladislav Pashaiev</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
