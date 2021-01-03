@@ -1,15 +1,15 @@
 # Etherscan API wrapper for .NET
-Library provides asynchronous bindings for some of [Etherscan API](https://etherscan.io/apis) calls with possibility to
-rate limit requests made by client instance.
+This library provides the asynchronous bindings for some of the [Etherscan API](https://etherscan.io/apis) calls with possibility to
+rate limit requests made by the client instance.
 
-Please note, that this lib do not convert WEI to `decimal` type and provides this values as `BigInteger`.
+Please note, that this lib does not convert WEI to `decimal` type and provides these values as `BigInteger`.
 
 ## Features
 - Built using [TAP](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)
-- Embedded rate limiting to follow Etherscan API restrictions
+- Embedded rate limiting to follow the Etherscan API restrictions
 - Provides exceptions for 'rate limit' or 'invalid API key' errors
 
-Sadly wrapper covers not all API calls (especially PRO) but this may change someday.
+Tise wrapper does not cover all API calls (especially PRO). This may change soon.
 
 ## Usage examples
 ```c#
@@ -21,10 +21,10 @@ var balance = await client.Account.GetAddressBalance("0xde0b295669a9fd93d5f28d9e
 
 For more examples see the Tests project.
 
-Notice: all used test data is taken from Etherscan API usage examples.
+Notice: all test data is taken from the Etherscan API usage examples.
 
 ## Implemented modules
-Etherscan API consist of _modules_ and _actions_. For now, wrapper has next modules and actions implemented:
+Etherscan API consist of _modules_ and _actions_. For now, the wrapper has the following modules and actions implemented:
 - **Account**: `balance`, `balancemulti`, `tokentx`, `tokennfttx`
 - **Stats**: `ethsupply`, `ethprice`
 
