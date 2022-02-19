@@ -36,3 +36,6 @@ bld/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# NuGet
+nuget.config

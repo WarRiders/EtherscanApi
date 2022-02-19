@@ -6,6 +6,9 @@
 		<Authors>War Riders team</Authors>
 		<Copyright>War Riders team, Vladislav Pashaiev</Copyright>
 		<PackageVersion>1.0.1</PackageVersion>
+		<PackageId>EtherscanApi</PackageId>
+		<Company>War Riders</Company>
+		<RepositoryUrl>https://github.com/WarRiders/EtherscanApi</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
